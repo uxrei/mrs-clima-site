@@ -1,0 +1,38 @@
+/* MRS · acabamento visual de homologação · 12/10/2026 */
+:root{--brand:#119ff0;--deep:#00142a;--navy:#061d40;--text:#061c37}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:Manrope,Arial,sans-serif;letter-spacing:-.015em}
+.header{height:72px;box-shadow:0 2px 16px #082b4314}
+.nav{width:min(1250px,calc(100% - 48px))}
+.logo{font-size:38px;letter-spacing:-4px}.logo small{letter-spacing:1.25px;font-size:6px;margin-top:4px}
+.navlinks{gap:23px}.navlinks a{font-size:10px}.navlinks .btn{border-radius:50px;padding:13px 20px}
+.btn{background:linear-gradient(110deg,#0785d5,#13a6f7);border-color:#159feb;box-shadow:0 5px 14px #004b7d28;transition:transform .3s,box-shadow .3s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 28px #0785d54d}
+.hero{min-height:620px;background-position:center!important;position:relative;isolation:isolate}
+.hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,#00132aa8,transparent 38%)}
+.hero h1{font-size:clamp(49px,5.7vw,80px);line-height:1.02;letter-spacing:-.055em;max-width:700px;margin:16px 0 22px}
+.hero h1 em{color:#28aaff}.hero p{font-size:18px;line-height:1.48;max-width:555px;font-weight:500}
+.hero .eyebrow{color:#fff;font-size:10px;letter-spacing:2px}
+.hero .eyebrow:after{content:"";display:inline-block;width:35px;height:1px;background:#42aef0;margin:0 0 4px 14px}
+.heroitems{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));max-width:1100px;gap:25px;margin-top:65px}
+.heroitems span{font-size:11px;line-height:1.4;color:#fff}
+.btn.outline{background:#03182b66;border-color:#dae6f2;box-shadow:none}
+.section{padding:76px 0}.intro{margin-bottom:28px}.intro h2{max-width:630px}.intro p{font-size:13px;line-height:1.65}
+.problem{background:linear-gradient(140deg,#f9fafb,#eff2f5);border-radius:7px;min-height:177px;padding:24px 22px}
+.problem .symbol{font-size:35px;color:#0088df}.problem h3{font-size:13px;margin:13px 0 8px}.problem p{font-size:11px;line-height:1.55;color:#45576c}
+.services{min-height:605px;background:#00172c}.servicecontent{padding-top:55px;padding-bottom:48px;background:linear-gradient(120deg,#00162b,#05233f)}
+.servicecontent h2{max-width:550px}.servicecontent p{font-size:12px;line-height:1.65}
+.servicerow{padding:10px 0}.servicerow strong{font-size:12px}.servicerow small{font-size:10px}.serviceicon{font-size:23px;min-width:28px}
+.segments{gap:18px}.segments img{height:155px;filter:saturate(.9);transition:filter .35s,transform .35s}
+.segments article:hover img{filter:saturate(1.2);transform:translateY(-4px)}.segments h3{font-size:12px;line-height:1.35}.segments p{font-size:10px}
+.dark{background:linear-gradient(90deg,#00172cf2,#00294cdb),url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1600&q=80') center/cover}
+.dark h2{font-size:clamp(30px,3vw,42px)}.benefit h3{font-size:11px}.benefit .symbol{font-size:30px}.benefit p{font-size:10px}
+.projects img{height:190px;transition:transform .35s}.projects article:hover img{transform:translateY(-4px)}.projects h3{font-size:12px}.projects p{font-size:11px}
+.stats{background:linear-gradient(95deg,#00182ff0,#002e56dd),url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1600&q=80') center/cover}
+.stats .three strong{color:#20a7fa;font-size:48px}.stats .three span{font-size:11px}
+.contact{background:linear-gradient(100deg,#00182ff8,#001d36ed),url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1600&q=80') center/cover}
+.contact h2{max-width:500px}.form{padding:22px}.form input,.form select,.form textarea{background:#f8fafc}.form .btn{width:100%}
+.reveal{animation:none;opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){.heroitems{grid-template-columns:repeat(2,1fr);margin-top:45px}.hero{min-height:690px}.servicecontent{padding:40px 24px}}
+@media(max-width:600px){.hero{min-height:670px;background-position:65% center!important}.hero h1{font-size:48px}.hero p{font-size:15px}.heroitems{gap:18px}.heroitems span{font-size:10px}.section{padding:60px 0}.segments{grid-template-columns:repeat(2,1fr)}.segments img{height:140px}.problem{min-height:160px;padding:20px 16px}.intro{gap:4px}}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
