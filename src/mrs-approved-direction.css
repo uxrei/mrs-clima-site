@@ -62,3 +62,22 @@ body{font-family:Manrope,Arial,sans-serif}
 @keyframes mrs-loading-line{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 @keyframes mrs-preloader-out{to{opacity:0;visibility:hidden;pointer-events:none}}
 @media(prefers-reduced-motion:reduce){.mrs-preloader{animation:none;display:none}}
+
+/* Marcas e tecnologias — carrossel contínuo */
+.brands-section{padding:78px 0 72px;background:#f7f8fa;overflow:hidden}
+.brands-heading{text-align:center;max-width:900px;margin:0 auto 36px}
+.brands-heading h2{margin:10px auto 12px;max-width:760px}
+.brands-heading p{margin:0 auto;max-width:680px;color:#58616d}
+.brands-viewport{width:100%;overflow:hidden;position:relative;mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.brands-track{display:flex;width:max-content;animation:mrs-brands-scroll 32s linear infinite;will-change:transform}
+.brands-viewport:hover .brands-track,.brands-viewport:focus-within .brands-track{animation-play-state:paused}
+.brands-group{display:flex;align-items:center;flex:0 0 auto;gap:54px;padding-right:54px}
+.brand-mark{width:160px;height:76px;display:flex;align-items:center;justify-content:center;opacity:.67;filter:grayscale(1);transition:opacity .3s ease,filter .3s ease,transform .3s ease}
+.brand-mark:hover{opacity:1;filter:grayscale(0);transform:scale(1.06)}
+.brand-mark svg{width:100%;height:auto;overflow:visible}
+.brand-text{fill:#444d56;font-size:37px;font-family:Arial,Helvetica,sans-serif;font-weight:800;letter-spacing:-1.5px;transition:fill .3s ease}
+.brand-mark:hover .brand-text{fill:#168bc6}
+.brand-lg{font-size:46px;letter-spacing:-3px}.brand-emerson{font-size:31px}.brand-danfoss{font-size:34px}.brand-carrier{font-style:italic}
+@keyframes mrs-brands-scroll{to{transform:translateX(-50%)}}
+@media(max-width:700px){.brands-section{padding:56px 0}.brands-group{gap:20px;padding-right:20px}.brand-mark{width:135px;height:65px}.brands-track{animation-duration:25s}}
+@media(prefers-reduced-motion:reduce){.brands-track{animation:none}.brands-viewport{overflow-x:auto;mask-image:none;-webkit-mask-image:none}}
