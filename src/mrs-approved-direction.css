@@ -11,11 +11,37 @@ body{font-family:Manrope,Arial,sans-serif}
 .problem{background:linear-gradient(130deg,#f8f9fb,#f0f3f6);border-radius:6px;min-height:185px;padding:25px}.problem .symbol{font-size:32px}.problem h3{font-size:13px;margin:10px 0 7px}.problem p{font-size:11px;line-height:1.5}
 .services{background:#00162b;min-height:595px}.servicecontent{background:linear-gradient(100deg,#00162b,#042a4c);padding-top:55px;padding-bottom:45px}.servicecontent h2{font-size:clamp(28px,2.8vw,40px)}.servicecontent p{font-size:12px}.servicerow{padding:10px 0}.servicerow strong{font-size:12px}.servicerow small{font-size:10px}
 .segments img{height:160px}.segments h3{font-size:12px}.segments p{font-size:10px}
-.dark{background:linear-gradient(100deg,#00172df7,#00335ada),url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1600&q=85') center/cover}.benefit h3{font-size:12px}.benefit p{font-size:10px}
+.dark{background:linear-gradient(100deg,#00172df7,#00335ada),url('/assets/mrs-diferenciais-equipe.webp') center/cover}.benefit h3{font-size:12px}.benefit p{font-size:10px}
 .projects img{height:200px}.projects h3{font-size:12px}.projects p{font-size:11px}
-.stats{background:linear-gradient(95deg,#00172df7,#00335ada),url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1600&q=85') center/cover}.three strong{color:#23a9fa}
-.contact{background:linear-gradient(105deg,#00172df7,#00335ada),url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1600&q=85') center/cover}
+.stats{background:linear-gradient(95deg,#00172df7,#00335ada),url('/assets/mrs-diferenciais-equipe.webp') center/cover}.three strong{color:#23a9fa}
+.contact{background:linear-gradient(105deg,#00172df7,#00335ada),url('/assets/mrs-diferenciais-equipe.webp') center/cover}
 .reveal{animation:none;opacity:0;transform:translateY(24px);transition:opacity .75s ease,transform .75s ease}.reveal.show{opacity:1;transform:none}
 @media(max-width:900px){.heroitems{grid-template-columns:repeat(2,1fr);margin-top:45px}.hero{min-height:690px}.services{grid-template-columns:1fr}.servicecontent{padding:40px 24px}}
 @media(max-width:600px){.hero{min-height:670px;background-position:65% center}.hero h1{font-size:45px}.hero p{font-size:15px}.heroitems{gap:16px}.section{padding:55px 0}.segments{grid-template-columns:repeat(2,1fr)}.segments img{height:145px}}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* Imagens definitivas MRS — layout aprovado */
+.hero{position:relative;isolation:isolate;background:#061d40!important;overflow:hidden}
+.hero-media{position:absolute;inset:0;z-index:-2;display:block}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center center;display:block}
+.hero-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(2,16,34,.94) 0%,rgba(2,16,34,.78) 35%,rgba(2,16,34,.24) 73%,rgba(2,16,34,.1) 100%)}
+.hero::after{z-index:-1}
+.hero>.container{position:relative;z-index:1}
+.servicephoto{background-image:url('/assets/mrs-servicos-chiller.webp')!important;background-position:center;min-height:560px}
+.segments img{aspect-ratio:4/3;height:auto;width:100%;object-fit:cover;object-position:center}
+.projects img{aspect-ratio:16/9;height:auto;width:100%;object-fit:cover;object-position:center}
+.differentials{background:linear-gradient(90deg,rgba(0,23,45,.96),rgba(0,35,67,.79)),url('/assets/mrs-diferenciais-equipe.webp') center/cover!important}
+.stats{background:linear-gradient(95deg,rgba(0,23,45,.95),rgba(0,38,71,.8)),url('/assets/mrs-indicadores-background.webp') center/cover!important}
+.contact{background:linear-gradient(100deg,rgba(0,23,45,.97),rgba(0,38,71,.86)),url('/assets/mrs-contato-background.webp') center/cover!important}
+@media(max-width:900px){.servicephoto{min-height:330px}}
+@media(max-width:600px){
+.hero{min-height:710px}
+.hero-media img{object-position:center top}
+.hero-shade{background:linear-gradient(180deg,rgba(2,16,34,.58) 0%,rgba(2,16,34,.84) 42%,rgba(2,16,34,.97) 100%)}
+.hero>.container{padding-top:90px;padding-bottom:30px}
+.hero h1{font-size:clamp(39px,10vw,48px)}
+.heroitems{margin-top:32px}
+.servicephoto{min-height:270px;background-position:center}
+.segments img{aspect-ratio:4/3}
+.projects img{aspect-ratio:16/9}
+}
