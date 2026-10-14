@@ -45,3 +45,9 @@ body{font-family:Manrope,Arial,sans-serif}
 .segments img{aspect-ratio:4/3}
 .projects img{aspect-ratio:16/9}
 }
+
+/* Indicadores aprovados: quatro colunas, inclusive abrangência nacional */
+.stats .three{grid-template-columns:repeat(4,minmax(0,1fr));align-items:center}
+.stats .three>div{padding-right:14px}
+.stats .three strong{font-size:clamp(24px,3.2vw,46px);line-height:1.1;letter-spacing:-.04em}
+@media(max-width:700px){.stats .three{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:28px}.stats .three>div:nth-child(2){border-right:0}}
