@@ -158,3 +158,60 @@ small{font-size:13px}
 .brand-mark img{height:64px}
 }
 @media(prefers-reduced-motion:reduce){.hero-media img,.hero .container{transform:none!important}.reveal{transition:none;transform:none}.brands-track{animation:none}}
+
+/* Desktop-first: escala de leitura confortável para monitores 1366–1920px */
+@media(min-width:1024px){
+  .container{width:min(1320px,calc(100% - 96px))}
+  .nav{width:min(1360px,calc(100% - 96px))}
+  .navlinks{gap:clamp(20px,1.7vw,30px)}
+  .navlinks a{font-size:15px;letter-spacing:0}
+  .navlinks .btn{font-size:15px;padding:16px 25px}
+  .header,.nav{height:88px}
+  html{scroll-padding-top:88px}
+  .logo img{width:195px!important;max-width:195px}
+  .section{padding:105px 0}
+  h2{font-size:clamp(43px,3.35vw,57px);line-height:1.12}
+  .eyebrow{font-size:13px;letter-spacing:.14em}
+  p{font-size:18px;line-height:1.75}
+  .intro{gap:65px;margin-bottom:42px}
+  .intro p{font-size:19px;line-height:1.7}
+  .hero{min-height:700px}
+  .hero h1{font-size:clamp(65px,5.6vw,92px);max-width:770px}
+  .hero p{font-size:21px;max-width:630px;line-height:1.65}
+  .hero .eyebrow{font-size:13px}
+  .heroitems span{font-size:15px;max-width:270px}
+  .btn{font-size:16px;padding:17px 28px}
+  .four{gap:22px}
+  .problem{padding:34px 27px;min-height:250px}
+  .problem h3{font-size:20px;line-height:1.35}
+  .problem p{font-size:16px;line-height:1.65}
+  .services{grid-template-columns:1fr 1fr}
+  .servicecontent{padding:75px max(36px,calc((100vw - 1320px)/2)) 65px 65px}
+  .servicecontent h2{font-size:clamp(42px,3vw,53px)}
+  .servicecontent p{font-size:18px;line-height:1.7}
+  .servicerow{padding:18px 0}
+  .servicerow strong{font-size:19px}
+  .servicerow small{font-size:15px;line-height:1.55}
+  .segments{gap:23px}
+  .segments h3,.projects h3{font-size:19px;line-height:1.4}
+  .segments p,.projects p{font-size:16px;line-height:1.65}
+  .benefit h3{font-size:20px}
+  .benefit p{font-size:17px}
+  .stats .three strong{font-size:clamp(32px,3.15vw,49px)}
+  .stats .three span{font-size:17px}
+  .brands-heading p{font-size:19px}
+  .faqitem button{font-size:19px;padding:24px 0}
+  .faqitem p{font-size:17px}
+  .contact h2{font-size:clamp(43px,3.4vw,57px)}
+  .contact p{font-size:19px}
+  .contactfeatures{font-size:17px}
+  .form label{font-size:15px}
+  .form input,.form select,.form textarea{font-size:17px;padding:15px}
+  .form small,.foot small{font-size:14px}
+}
+@media(min-width:1024px) and (max-width:1199px){
+  .container,.nav{width:calc(100% - 64px)}
+  .problem{padding:27px 20px}
+  .problem h3{font-size:18px}
+  .segments h3{font-size:17px}
+}
