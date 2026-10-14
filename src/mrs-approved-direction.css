@@ -81,3 +81,80 @@ body{font-family:Manrope,Arial,sans-serif}
 @keyframes mrs-brands-scroll{to{transform:translateX(-50%)}}
 @media(max-width:700px){.brands-section{padding:56px 0}.brands-group{gap:20px;padding-right:20px}.brand-mark{width:135px;height:65px}.brands-track{animation-duration:25s}}
 @media(prefers-reduced-motion:reduce){.brands-track{animation:none}.brands-viewport{overflow-x:auto;mask-image:none;-webkit-mask-image:none}}
+
+/* Refinamento de hierarquia e leitura — MRS */
+body{font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-weight:800;text-wrap:balance}
+h2{font-size:clamp(34px,3.65vw,52px);line-height:1.12;letter-spacing:-.045em}
+h3{font-size:clamp(17px,1.35vw,20px);line-height:1.32;letter-spacing:-.02em}
+p{font-size:clamp(15px,1.2vw,17px);line-height:1.72;color:#536578}
+small{font-size:13px}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.15em;margin-bottom:17px}
+.section{padding:clamp(76px,7vw,112px) 0}
+.intro{gap:clamp(35px,5vw,75px);margin-bottom:36px}
+.intro p,.brands-heading p{font-size:16px;line-height:1.75}
+.navlinks a{font-size:13px;font-weight:700}
+.navlinks .btn,.btn{font-size:14px;font-weight:800;padding:16px 25px}
+.hero h1{font-size:clamp(50px,5.8vw,86px);font-weight:850;line-height:1.025;letter-spacing:-.057em}
+.hero p{font-size:clamp(17px,1.55vw,20px);line-height:1.65;max-width:610px}
+.hero .eyebrow{font-size:12px}
+.heroitems span{font-size:13px;line-height:1.55}
+.problem{padding:30px 26px;min-height:218px;border:1px solid #e9eef3}
+.problem h3{font-size:17px;font-weight:800;line-height:1.35;margin:14px 0 10px}
+.problem p{font-size:14px;line-height:1.65;color:#4f6172}
+.servicecontent h2{font-size:clamp(34px,3vw,46px)}
+.servicecontent p{font-size:16px;line-height:1.72}
+.servicerow{padding:15px 0;gap:20px}
+.servicerow strong{font-size:16px;font-weight:800}
+.servicerow small{font-size:13px;line-height:1.55;margin-top:5px}
+.segments{gap:20px}
+.segments h3,.projects h3{font-size:17px;font-weight:800;line-height:1.35;margin:16px 0 8px}
+.segments p,.projects p{font-size:14px;line-height:1.65}
+.benefit h3{font-size:18px;font-weight:800}
+.benefit p{font-size:15px;line-height:1.65}
+.stats .three span{font-size:14px;line-height:1.5}
+.faqitem button{font-size:16px;line-height:1.5;padding:22px 0;font-weight:750}
+.faqitem p{font-size:15px;line-height:1.7}
+.contactfeatures{font-size:15px}
+.form{padding:clamp(25px,3vw,40px);gap:18px}
+.form label{font-size:13px;font-weight:800}
+.form input,.form select,.form textarea{font-size:15px;padding:14px 15px;border-radius:6px}
+.form small,.foot small{font-size:12px}
+.brands-section{padding:85px 0}
+.brands-heading{margin-bottom:43px}
+.brand-mark{width:185px;height:92px;opacity:.7;filter:grayscale(1) brightness(.47);transition:opacity .35s ease,filter .35s ease,transform .35s ease}
+.brand-mark img{display:block;width:100%;height:74px;object-fit:contain}
+.brand-mark:hover{filter:grayscale(0) brightness(1);opacity:1;transform:scale(1.08)}
+/* Animações progressivas e sutis */
+.reveal{transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);transform:translate3d(0,40px,0)}
+.reveal.show{transform:translate3d(0,0,0)}
+.hero-media img{transform:scale(calc(1.055 + var(--mrs-scroll-progress,0)*.035)) translateY(calc(var(--mrs-scroll,0)*.055px));transition:transform .15s linear}
+.hero .container{transform:translateY(calc(var(--mrs-scroll,0)*.09px))}
+.problem,.segments article,.projects article{transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s ease}
+.problem:hover,.segments article:hover,.projects article:hover{transform:translateY(-8px);box-shadow:0 20px 45px #092d4a19}
+.segments article,.projects article{overflow:hidden;border-radius:8px}
+.segments img,.projects img{transition:transform .65s cubic-bezier(.2,.8,.2,1),filter .65s ease}
+.segments article:hover img,.projects article:hover img{transform:scale(1.035);filter:saturate(1.1)}
+.btn{transition:transform .3s ease,box-shadow .3s ease,background .3s ease}
+@media(max-width:900px){.navlinks a{font-size:15px}.segments{grid-template-columns:repeat(3,minmax(0,1fr))}.hero .container{transform:none}}
+@media(max-width:600px){
+.section{padding:72px 0}
+.hero h1{font-size:clamp(43px,10.5vw,56px)}
+.hero p{font-size:17px}
+.heroitems span{font-size:13px}
+.eyebrow,.hero .eyebrow{font-size:11px}
+.intro p{font-size:16px}
+.four{gap:13px}
+.problem{min-height:0;padding:22px 18px}
+.problem h3{font-size:16px}
+.problem p{font-size:14px}
+.segments{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.segments h3,.projects h3{font-size:16px}
+.segments p,.projects p{font-size:14px}
+.servicecontent{padding:55px 22px}
+.servicerow strong{font-size:16px}
+.servicerow small{font-size:13px}
+.brand-mark{width:150px;height:78px}
+.brand-mark img{height:64px}
+}
+@media(prefers-reduced-motion:reduce){.hero-media img,.hero .container{transform:none!important}.reveal{transition:none;transform:none}.brands-track{animation:none}}
