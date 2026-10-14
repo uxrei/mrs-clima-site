@@ -256,3 +256,48 @@ small{font-size:13px}
  .privacy-content{padding:26px 20px}
  .footer-links{gap:12px}
 }
+
+/* Política de Privacidade — direção editorial premium, alinhada à MRS */
+.privacy-page{background:#fff;padding:0}
+.privacy-header{background:#fff}
+.privacy-back-link{font-size:14px;font-weight:800;color:#0b3e69;transition:color .2s}
+.privacy-back-link:hover{color:#159be9}
+.privacy-hero{background:radial-gradient(ellipse at 85% 18%,#124d7d 0%,transparent 45%),linear-gradient(110deg,#03162c 0%,#062e53 100%);color:#fff;overflow:hidden;position:relative}
+.privacy-hero:after{content:"";position:absolute;right:-100px;bottom:-220px;width:590px;height:590px;border:1px solid #75c9ff26;border-radius:50%;box-shadow:0 0 0 95px #75c9ff08,0 0 0 195px #75c9ff05;pointer-events:none}
+.privacy-hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(280px,.7fr);align-items:center;gap:clamp(40px,7vw,115px);padding:clamp(85px,9vw,135px) 0}
+.privacy-kicker,.privacy-mini-label{font-size:12px;letter-spacing:.15em;font-weight:800}
+.privacy-kicker{color:#8cd3ff;display:flex;align-items:center;gap:11px}
+.privacy-kicker-dot{display:block;width:8px;height:8px;border-radius:50%;background:#48baff;box-shadow:0 0 0 5px #48baff22}
+.privacy-hero h1{font-size:clamp(52px,6.2vw,96px);letter-spacing:-.065em;line-height:1.02;margin:26px 0}
+.privacy-hero h1 em{font-style:normal;color:#56bbfa}
+.privacy-hero-grid>div:first-child>p{font-size:clamp(17px,1.45vw,21px);line-height:1.7;max-width:700px;color:#d6e5f2}
+.privacy-hero-tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}
+.privacy-hero-tags span{border:1px solid #ffffff45;border-radius:40px;padding:7px 15px;font-size:12px;color:#e5f4ff;font-weight:750}
+.privacy-hero-aside{background:#ffffff0d;border:1px solid #ffffff25;border-radius:16px;padding:clamp(26px,3vw,42px);backdrop-filter:blur(8px)}
+.privacy-shield{font-size:43px;line-height:1;color:#67c8ff;margin-bottom:24px}
+.privacy-hero-aside strong{display:block;font-size:clamp(23px,2vw,29px);line-height:1.24;letter-spacing:-.035em}
+.privacy-hero-aside p{font-size:15px;color:#d0e0ed;line-height:1.75;margin:17px 0 28px}
+.privacy-hero-aside small{font-size:12px;color:#9bbbd3}
+.privacy-overview{background:#f4f7fa;border-bottom:1px solid #e2e9f0}
+.privacy-overview-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(35px,6vw,95px);padding:clamp(65px,7vw,100px) 0}
+.privacy-mini-label{color:#138dcf}
+.privacy-overview h2{font-size:clamp(33px,3.2vw,49px);line-height:1.14;margin:15px 0 0;max-width:550px}
+.privacy-overview p{font-size:18px;line-height:1.8;color:#4d6073;margin:0}
+.privacy-details{background:#fff;padding:clamp(65px,8vw,115px) 0}
+.privacy-layout{display:grid;grid-template-columns:285px minmax(0,1fr);gap:clamp(45px,7vw,110px);align-items:start}
+.privacy-sidebar{position:sticky;top:120px}
+.privacy-sidebar nav{display:flex;flex-direction:column;margin-top:22px;border-left:1px solid #dbe4ec}
+.privacy-sidebar a{font-size:13px;line-height:1.45;font-weight:700;padding:11px 8px 11px 16px;color:#657588;transition:color .2s,background .2s}
+.privacy-sidebar a:hover{color:#0b72b5;background:#f2f8fc}
+.privacy-sidebar a span{color:#178fce;font-size:11px;font-weight:800;margin-right:11px}
+.privacy-articles{max-width:810px}
+.privacy-article{padding:0 0 45px;margin-bottom:50px;border-bottom:1px solid #e1e8ee;scroll-margin-top:120px}
+.privacy-article-index{font-size:11px;font-weight:800;letter-spacing:.13em;color:#158bc6;margin-bottom:18px}
+.privacy-article h2{font-size:clamp(29px,2.7vw,40px);line-height:1.2;margin:0 0 22px;color:#092b4a;letter-spacing:-.04em}
+.privacy-article p{font-size:17px;line-height:1.9;color:#526477;margin:0 0 17px}
+.privacy-final{background:#f2f7fb;border:1px solid #dbe9f3;border-radius:15px;padding:clamp(28px,4vw,50px)}
+.privacy-final h2{font-size:clamp(30px,3vw,42px);margin:12px 0}
+.privacy-final p{font-size:17px;line-height:1.7;color:#526477;max-width:570px}
+.privacy-final .btn{margin-top:12px}
+@media(max-width:900px){.privacy-hero-grid{grid-template-columns:1fr;gap:35px}.privacy-hero-aside{max-width:540px}.privacy-layout{grid-template-columns:1fr;gap:35px}.privacy-sidebar{position:static}.privacy-sidebar nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-left:0;gap:5px 14px}.privacy-sidebar a{border-left:2px solid #dbe4ec}}
+@media(max-width:600px){.privacy-hero-grid{padding:68px 0}.privacy-hero h1{font-size:clamp(48px,12vw,68px)}.privacy-hero-grid>div:first-child>p{font-size:17px}.privacy-hero-aside{padding:26px}.privacy-overview-grid{grid-template-columns:1fr;gap:20px;padding:65px 0}.privacy-overview p{font-size:16px}.privacy-details{padding:55px 0}.privacy-sidebar nav{grid-template-columns:1fr 1fr}.privacy-sidebar a{font-size:12px}.privacy-article{margin-bottom:38px;padding-bottom:32px}.privacy-article p{font-size:16px;line-height:1.8}}
